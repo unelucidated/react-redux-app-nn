@@ -40,6 +40,7 @@ class CreateProject extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => {
+    console.log('inside mapDispatchToProps', dispatch);
     return {
         createProject: (project) => dispatch(createProject(project))
     }

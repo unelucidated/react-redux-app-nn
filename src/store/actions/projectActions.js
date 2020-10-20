@@ -1,5 +1,5 @@
 export const createProject = (project) => {
-    console.log(project);
+    console.log('inside createProject action creator', project);
     return (dispatch, getState, { getFirebase, getFirestore }) => {
         //make async call to database
         const firestore = getFirestore();
